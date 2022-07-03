@@ -1,0 +1,37 @@
+h1 { /** Box-level */
+    background-color: lightgray;
+    height: 250px;
+    width: 250px;
+    
+    /** border: width - style - color */
+    border: 10px solid darkslategray; /*! incluye tamaño, stylo y color
+    
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    Se puede abreviar del mismo modo que border. Sentido del relejo
+    /*! padding: top - right - bottom - left */
+    padding: 10px 10px 10px 10px; 
+
+    /*! margin se puede abreviar sentido del reloj*/
+    /*
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    margin: 20px;
+    */
+    /*margin: 20px 20px 40px 20px;*/
+    margin: 20px auto 40px auto; /*! Centralizar la caja en la pagina*/
+
+    /** outline da contorno entre la borda y la margen. No modifica la margen */
+    /** outline: width - style - color */
+    outline: 5px dashed salmon;
+}
+
+
+a { /** inline-level */
+    border: 10px solid red;
+    padding: 10px;
+}

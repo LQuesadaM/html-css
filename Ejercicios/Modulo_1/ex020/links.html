@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            background-color: #F6E3C5;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: brown;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /**
+
+         *! Pseudo-classes definen el estado de un elemento
+         *! : = pseudo-class
+         ** :visited   -  :hover  -  :active    
+
+        */
+
+
+        a:visited {
+            color: red;
+        }
+
+        a:hover {
+            color: #653232;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: black;
+        }
+
+        /**
+
+        * ! Pseudo-elementos pueden interactuar con classes, elementos y en los id. Interactuan con el contenido de un elemento
+        * ! :: = pseudo-element
+        ** 
+
+        */
+
+        .especial {
+            background-color: rgb(28, 207, 70);
+        }
+
+        .especial::before {
+            content: "⇒ ";
+        }
+
+        .especial::after {
+            content: " ⇐";
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/gustavoguanabara" target="_blank" rel="external">Repositorio GitHub</a></li>
+        <li><a href="https://www.youtube.com/c/CursoemV%C3%ADdeo" target="_blank" rel="external" class="especial">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="_blank" rel="external" class="especial">Site do Curso emVideo</a></li>
+    </ul>
+</body>
+</html>
