@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+body {
+    background-image: url("../imagens/wallpaper001.jpg");
+}
+
+div.quadrado {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: lightgray;
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+}
+
+div#q1 {
+    background-color: skyblue;
+}
+
+div#q2 {
+    /** Background-color: linear-gradient(Por defecto simebre va ser (to bottom) */
+    background-image: linear-gradient(to bottom, yellow, red);
+}
+
+div#q3 {
+    background-image: url("../imagens/pattern003.png");
+}
+
+section > p {
+    padding: 10px;
+    background-color: whitesmoke;
+    color: rgb(229, 135, 5);
+}
+
+section > a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+}
+
+section > a:hover {
+    text-decoration: underline;
+    background-color: burlywood;
+    color: white;
+    font-style: italic;
+    font-size: 1.4em;
+}
